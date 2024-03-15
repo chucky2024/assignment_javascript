@@ -1,7 +1,7 @@
 h1{
     color: blue;
 }
-input{
+input[type=text]{
    border-width: 5px solid;
    border-color: blue;
    padding: 5px;

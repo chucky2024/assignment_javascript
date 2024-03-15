@@ -7,27 +7,41 @@
         <meta name="keywords"content="name,date,email">
         <meta name="Viewport"content="width=device-width,initial-scale=1.0">
         <title>GIT ASSIGNMENT</title>
-        <link rel="stylesheet" href="../CSS/Ass1(GIT).css">
+        <link rel="stylesheet" href="Ass1(GIT).css">
        
     </head>
     <body>
         <h1>APPLICATION FORM</h1>
-            <img src="..//IMAGES/Amaterasu.jpg">
+            <img src="Amaterasu.jpg">
             <h3 >Apply or die!<h3>
                
         <form>
             <label for="s.name">Surname:</label>
-                <input type="text"id="s.name"/>
+                <input type="text"id="s.name" placeholder=""/>
                 <br/>
             <label for="F.name">Firstname:</label>
-                <input type="text"id="F.name"/>
+                <input type="text"id="F.name" placeholder=""/>
+                <br/>
+                <label for="hobb">Hobbies:</label>
+                <input type="text"id="hobb"/>
                 <br/>
             <label for="email">Email:</label>
-                <input type="text"id="email"/>
+                <input type="text"id="email" placeholder=""/>
                 <br/>
             <label for="DOB">Date of birth:</label>
                 <input type="date"id="DOB"/>
                 <br/>
+                <label for="male">Male:</label>
+                <input type="radio"id="male" name="sex"/>
+                <br/>
+                <label for="female">Female:</label>
+                <input type="radio"id="female" name="sex"/>
+                <br/>
+                <label for="unknown">Prefer not to say:</label>
+                <input type="radio"id="unknown" name="sex"/>
+                <br/>
+                
+
                 <button>Submit</button>
                 
         </form>
