@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+    <head>
+<title>Javascript Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script> 
+//how to get even and odd num
+ function evenOdd(num) {
+   if(num % 2 === 0) {
+     return num + " is Even";
+   }
+   else {
+     return num + " is Odd";
+   }
+  }
+   console.log(evenOdd(6));
+   console.log(evenOdd(5));
+ 
+ 
+ 
+ //how to find the largest of two numbers
+ function largest(num1, num2) {
+   return Math.max(num1, num2)
+ }
+ 
+ console.log(largest(25, 4))
+ 
+ 
+ 
+ 
+ 
+ //getiing day
+ function getDay() {
+   let today = new Date().getDay();
+   let day;
+ 
+   switch(today) {
+     case 0: day = "This is Sunday";
+     break;
+ 
+     case 1: day = "This is Monday";
+     break;
+ 
+     case 2: day = "This is  Tuesday";
+     break;
+ 
+     case 3: day = "This is Wednesday";
+     break;
+ 
+     case 4: day = "This is Thursday";
+     break;
+ 
+     case 5: day = "This is Friday";
+     break;
+ 
+     case 6: day = "This is Saturday";
+     break;
+   }
+   return day;
+ }
+ 
+ console.log(getDay())
+ 
+ //finding score
+ function Grade(score) {
+
+ 
+   if(score >= 70 && score <= 100) {
+     grade = "Grade A";  }
+ 
+     else if(score >= 50 && score <= 69)
+ {
+     grade = "Grade B";}
+ 
+     else if (score >= 35 && score <= 49)
+    
+     { grade = "Grade C";
+   }
+ 
+   else if (score >= 0 && score <= 34)
+   { grade = "Grade E";
+ }
+ 
+ else {
+   grade = "You are a FAILURE!!!!";
+ }
+ 
+ return grade;
+ }
+ 
+ console.log(Grade(57));
+ 
+ 
+ 
+ //using while loop
+ function getValue(){
+ let counter = 0 ;
+    let value = "";
+
+    while(counter < 10  ){
+        value += "The counted value is " + counter + "<br/>" ;
+        console.log("checking value " + counter);
+        counter++;
+        }
+        document.getElementById("demo1").innerHTML = value;
+ }
+ </script>
+  </head>
+    
+  <body>
+  <h1>Javascript Example</h1>
+  
+  <p id="demo1">The count is:{value}</p>
+  
+  
+  <button type="button" onClick="getValue()">While Operation</button>
+    <hr/>
+  <button type="button" onClick="Grade()">Grade Operation</button>
+  <hr/>
+  <button type="button" onClick="Day()">Week Operation</button>
+    <hr/>
+  <button type="button" onClick="even_Odd()">Num Operation</button>
+  </body>
+</html>
